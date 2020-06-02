@@ -1,0 +1,35 @@
+<div class="container mt-5 mb-5">
+    <div class="row" style="
+    padding-top: 12rem;
+">
+    <div class="col-md-4 ">
+    </div>
+        <div class="col-md-4 ">
+        <div *ngIf="status == 'error'" class="alert alert-danger" role="alert">
+             Fallo Login 
+        </div>
+        <div *ngIf="ghome"class="alert alert-success" role="alert">
+            Login exitoso <a routerLink="/home" routerLinkActive="router-link-active"  >Go to home!</a>
+        </div>
+            <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+                <p>
+                    <label>Email</label>
+                    <input  #email="ngModel" [(ngModel)]="user.email" type="email" name="email" class="form-control" required/>
+                    <span *ngIf="!email.valid && email.touched">
+                     El email es obligatorio
+                    </span>
+                </p>  
+                <p>
+                    <label>Password</label>
+                    <input #password="ngModel" [(ngModel)]="user.password" type="password" name="password" class="form-control" required/>
+                    <span *ngIf="!password.valid && password.touched">
+                     El password es obligatorio
+                    </span>
+                </p> 
+                 <input type="submit" value="login" class="btn btn-primary" [disabled]="!loginForm.form.valid" />     
+            </form> 
+        </div>
+    <div class="col-md-4 ">
+    </div>
+    </div>
+</div>

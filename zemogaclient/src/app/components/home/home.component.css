@@ -1,0 +1,210 @@
+.bg{
+    background-image: url(../../../assets/banner/headBanner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ 
+    padding-top: 8.625rem;
+    padding-bottom: 91.625rem;
+    height: 900px;
+ 
+    background-position: center center;
+    background-size: cover;
+}
+
+body{
+    padding: 20px;
+    color: white;
+}
+
+h6, h5, p{
+    color: white;
+}
+
+.comparate {
+    position: relative;
+    margin-top: 1.3em;
+    right: 1.3em
+}
+
+
+
+
+.selec-up-compatate{
+    background-color: #1ebbb4;
+    padding: 0.3em;
+    font-size: 19px;
+    color: white;
+}
+
+.selec-dowm-compatate{
+  background-color: #ffad1b;
+  padding: 0.3em;
+  font-size: 19px;
+  color: white;
+}
+
+.up{
+    width: 50%;
+    padding: 10px;
+    background-color: #2dbcb496;
+    color: white;
+    text-align: center;
+    font-size: 29px;
+}
+
+.dowm{
+    width: 50%;
+    padding: 10px;
+    background-color: #b37915a1;;
+    color: white;
+    text-align: center;
+    font-size: 29px;
+}
+
+.card-blur {
+    border: 0;
+    border-radius: 0;
+    backdrop-filter: blur(16px) !important;
+    background-color: #9389888c !important;
+}
+
+.banner-card-title {
+    font-size: 59px;
+    color: white;
+    font-weight: 900;
+}
+
+
+.bg-card01 {
+    background-image: url(../../../assets/section/kanye.jpg);
+    background-position: -195px;
+}
+
+.bg-card01::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #020202;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.bg-card02 {
+    background-image: url(../../../assets/section/indu.jpg);
+    background-position: -358px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-card02::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #020202;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.bg-card03 {
+    background-image: url(../../../assets/section/markZ.jpg);
+    background-position: -302px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-card03::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #020202;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.bg-card04 {
+    background-image: url(../../../assets/section/cristina.jpg);
+    background-position: -302px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-card04::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #020202;
+    position: absolute;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+  
+  .votes {
+    display: inline-block;
+    padding: 6px;
+    font-size: 16px;
+    font-family: Verdana, Arial, Helvetica;
+    margin: 0;
+    color: white;
+    border-color: #dddddd;
+    border-style: solid;
+  }
+  
+  .down-votes {
+    width: 50%;
+    padding: 10px;
+    right: 0;
+    background: #ffad1b7a;
+    border-width: 0px 0 0px 0px;
+    text-align: right;
+    font-size: 29px;
+  }
+  
+  .up-votes {
+    width: 50%;
+    padding: 10px;
+    left: 0;
+    text-align: left;
+    background: #1ebbb4b3;
+    border-width: 0px 0 0px 0px;
+    font-size: 29px;
+  }
+
+
+  .selec-up{
+    background-color: #1ebbb4;
+    padding: 0.3em;
+    font-size: 19px;
+    color: white;
+  }
+
+  .selec-dowm{
+    background-color: #ffad1b;
+    padding: 0.3em;
+    font-size: 19px;
+    color: white;
+  }
+  
+  .rating-bar{
+      z-index: 2;
+  }
+
+.btn-new {
+    border-radius: 0;
+}
+  
+.btn-new:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem white;
+}
+
+.alert-new {
+    color: black;
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}

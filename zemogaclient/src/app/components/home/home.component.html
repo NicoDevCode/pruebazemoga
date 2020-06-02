@@ -1,0 +1,193 @@
+
+<div  class="bg">
+    <div class="container">
+        <div class="card card-blur" style="width: 24rem; margin-top: 30rem;">
+          <div class="card-body">
+            <h6 class="card-subtitle mb-2 ">What's your opinion on</h6>
+            <h1 class="card-title banner-card-title">Pope Francis?</h1>
+            <p class="card-text">
+                He's talking tough on clery sexual abuse,
+                but is he just another papal pervert
+                protector? (thumbs dowm) or a true
+                pedophile punishing pontiff? (thumbs up)
+            </p>
+            <br>
+            <h6 class="card-subtitle mb-2"><i class="fa fa-wikipedia-w" aria-hidden="true"></i> More information</h6>
+            <br>
+            <h5 class="card-subtitle mb-2 ">What's Your Veredict?</h5>
+          
+          </div>
+          <div style="display: flex">
+            <div class="up">
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+            </div>
+            <div class="dowm">
+            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+</div> 
+
+
+<div class="container mt-5" *ngIf="alert">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="alert alert-new" role="alert">
+                <div class="row">
+                  <div class="col-md-3">
+                      <span>Speak out. Be heard.</span>
+                      <h2><strong>Be counted</strong></h2>
+                  </div>
+                  <div class="col-md-8">
+                      <span>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, </span>
+                  </div>
+                  <div class="col-md-1">
+                   <i style="float: right" class="fa fa-times" aria-hidden="true" (click)="close()"></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container mt-5 mb-5">
+    <div class="row">
+        <div class="col-md-6">
+          <div class="card page-title-are bg-card01">
+            <div class="card-body" style="margin-top: 23em; z-index: 2;">
+            
+              <div>
+              <span  class="float-left comparate">
+              <a *ngIf="porcentUp3 > porcentDown3" href="#" class="card-link selec-up-compatate"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>  <a *ngIf="porcentUp3 < porcentDown3" href="#" class="card-link selec-dowm-compatate"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></span> <h1 class="card-title banner-card-title">{{candidatos['3'].name}}</h1>
+              </div>
+              <h6 class="card-subtitle mb-2"><strong>1 month ago</strong> {{candidatos['3'].ref}}</h6>
+              <p class="card-text">
+              {{candidatos['3'].description}}
+              </p>
+              
+              <button (click)="selectVoto(1)" type="button" class="btn-new btn  selec-up"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+              <button (click)="selectVoto(0)"type="button" class="btn-new btn  selec-dowm ml-2"><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+              <input (click)="votaNow(candidatos['3'].Id)" style="    
+              color: white;
+              border: white solid 1px;
+              background-color: #00000040;
+              height: 3em;
+              width: 6em;" class="ml-3" type="button" name="Vote now" value="Vote now">
+            </div>
+            <div class="rating-bar">
+              <div class="votes up-votes"  id="up-votes-3">
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i> {{porcentUp3}} %
+              </div>
+              <div class="votes down-votes" id="down-votes-3">
+              {{porcentDown3}} % <i class="fa fa-thumbs-down" aria-hidden="true"></i>   
+              </div>
+            </div>
+         </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card page-title-are bg-card02">
+            <div class="card-body" style="margin-top: 23em; z-index: 2;">
+            
+              <div>
+              <span  class="float-left comparate">
+              <a *ngIf="porcentUp1 > porcentDown1" href="#" class="card-link selec-up-compatate"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>  <a *ngIf="porcentUp1 < porcentDown1" href="#" class="card-link selec-dowm-compatate"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></span> <h1 class="card-title banner-card-title">{{candidatos['1'].name}}</h1>
+              </div>
+              <h6 class="card-subtitle mb-2"><strong>1 month ago</strong> {{candidatos['1'].ref}}</h6>
+              <p class="card-text">
+                {{candidatos['1'].description}}
+              </p>
+              
+              <button (click)="selectVoto(1)" type="button" class="btn-new btn  selec-up"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+              <button (click)="selectVoto(0)"type="button" class="btn-new btn  selec-dowm ml-2"><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+              <input (click)="votaNow(candidatos['1'].Id)" style="    
+              color: white;
+              border: white solid 1px;
+              background-color: #00000040;
+              height: 3em;
+              width: 6em;" class="ml-3" type="button" name="Vote now" value="Vote now">
+            </div>
+            <div class="rating-bar">
+              <div class="votes up-votes" id="up-votes-1">
+              <i class="fa fa-thumbs-up"  aria-hidden="true"></i> {{porcentUp1}} %
+              </div>
+              <div class="votes down-votes" id="down-votes-1" >
+              {{porcentDown1}} % <i class="fa fa-thumbs-down" aria-hidden="true"></i>   
+              </div>
+            </div>
+         </div>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-6">
+          <div class="card page-title-are bg-card03">
+            <div class="card-body" style="margin-top: 23em; z-index: 2;">
+            
+              <div>
+              <span  class="float-left comparate">
+              <a *ngIf="porcentUp2 > porcentDown2" href="#" class="card-link selec-up-compatate"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>  <a *ngIf="porcentUp2 < porcentDown2" href="#" class="card-link selec-dowm-compatate"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></span> <h1 class="card-title banner-card-title"> {{candidatos['2'].name}}</h1>
+              </div>
+              <h6 class="card-subtitle mb-2"><strong>1 month ago</strong> {{candidatos['2'].ref}}</h6>
+              <p class="card-text">
+              {{candidatos['2'].description}}
+              </p>
+              
+              <button (click)="selectVoto(1)" type="button" class="btn-new btn  selec-up"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+              <button (click)="selectVoto(0)"type="button" class="btn-new btn  selec-dowm ml-2"><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+              <input (click)="votaNow(candidatos['2'].Id)" style="    
+              color: white;
+              border: white solid 1px;
+              background-color: #00000040;
+              height: 3em;
+              width: 6em;" class="ml-3" type="button" name="Vote now" value="Vote now">
+            </div>
+            <div class="rating-bar">
+              <div class="votes up-votes" id="up-votes-2">
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i> {{porcentUp2}} %
+              </div>
+              <div class="votes down-votes" id="down-votes-2">
+              {{porcentDown2}} % <i class="fa fa-thumbs-down" aria-hidden="true"></i>   
+              </div>
+            </div>
+         </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card page-title-are bg-card04">
+            <div class="card-body" style="margin-top: 14.2em; z-index: 2;">
+            
+              <div>
+              <span  class="float-left comparate">
+              <a *ngIf="porcentUp0 > porcentDown0" href="#" class="card-link selec-up-compatate"><i class="fa fa-thumbs-up" aria-hidden="true"></i></a>  <a *ngIf="porcentUp0 < porcentDown0" href="#" class="card-link selec-dowm-compatate"><i class="fa fa-thumbs-down" aria-hidden="true"></i></a></span> <h1 class="card-title banner-card-title">{{candidatos['0'].name}}</h1>
+              </div>
+              <h6 class="card-subtitle mb-2"><strong>1 month ago</strong> {{candidatos['0'].ref}}</h6>
+              <p class="card-text">
+                {{candidatos['0'].description}}
+              </p>
+              
+              
+              <button (click)="selectVoto(1)" type="button" class="btn-new btn  selec-up"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+              <button (click)="selectVoto(0)"type="button" class="btn-new btn  selec-dowm ml-2"><i class="fa fa-thumbs-down" aria-hidden="true"></i></button>
+        
+              <input (click)="votaNow(candidatos['0'].Id)" style="    
+              color: white;
+              border: white solid 1px;
+              background-color: #00000040;
+              height: 3em;
+              width: 6em;" class="ml-3"  type="button" name="Vote now" value="Vote now">
+           </div>
+            <div class="rating-bar">
+              <div class="votes up-votes"  id="up-votes-0">
+              <i class="fa fa-thumbs-up" aria-hidden="true"></i> {{porcentUp0}} %
+              </div>
+              <div class="votes down-votes" id="down-votes-0">
+              {{porcentDown0}} % <i class="fa fa-thumbs-down" aria-hidden="true"></i>   
+              </div>
+            </div>
+         </div>
+        </div>
+    </div>
+</div>
+
+
